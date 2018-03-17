@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Vishal Malik</title>
+	<link rel="icon" type="image/png" href="assets/images/icon.png"/>
+	<!-- paper-kit -->
+	<link href="libraries/paper/css/bootstrap.min.css" rel="stylesheet" />
+ 	<link href="libraries/paper/css/paper-kit.css" rel="stylesheet"/>
+ 	<link href="libraries/paper/css/demo.css" rel="stylesheet" />
+  	<!--Fonts and icons-->
+  	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+ 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+ 	<link href="libraries/paper/css/nucleo-icons.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="libraries/css/master.css">
+	<style>
+		.filter {
+			display: none;
+		}
+
+		.show {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<!-- Header -->
+	<header class="nav-down" style="width: min-width; font-size: 18px; color: black; z-index: 2; z-index: 100;">
+			<a href="#work" style="margin-left:20px;" class="menu"><strong>Work</strong></a>
+			<a href="#skills" class="menu"><strong>Skills</strong></a>
+			<a href="#about" class="menu"><strong>About</strong></a>
+			<a href="#contact" style="margin-right: 20px" class="menu"><strong>Contact</strong></a>
+   	</header>
+	<!-- Header Ends -->
+
+	<!-- Recent/Helighted/TagLine -->
+	<div id="recent">
+		<div class="animated bounceInUp" style="height: 90vh; padding-top: 42px; display: block; overflow: auto;">
+			<div class="card card-profile" id="tag-line" style="background: white;">
+		   	<div class="card-avatar">
+		           <img src="assets/images/vishal.jpg" alt="..." style="border-radius: 25px">
+		   	</div>
+		  	<div class="card-body">
+		       <h3 class="card-title" style=" letter-spacing: 1px; color: green;">VISHAL MALIK</h3>
+		       <h5 class="card-category" style="color: black;">Software Developer / Web Developer</h5>
+		       <p class="card-description">
+		       	I make heavenly UX come alive thus enabling greater wealth for U & I.
+		       	<br><br><br>
+		       </p>
+		   	</div>
+			</div>
+		</div>
+	</div>
+	<!-- Recent/Helighted/TagLine Ends -->
+
+	<!-- Lead Down -->
+	<div id="lead-down" style="height: 10vh; display: block;">
+    <span>
+			<a href="#work">
+        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+			</a>
+    </span>
+  </div>
+	<!-- Lead Down Ends -->
+
+	<!-- Work -->
+	<div id="work">
+
+		<!-- Work Navigation -->
+		<ul id="work-nav" class="nav nav-pills nav-pills-info center-div" style="background: rgb(255,252,244); border-radius: 50px; z-index: 2; opacity: 0.8;">
+			 <li class="nav-item">
+	 		     <a id="work-nav-link" onclick="filterSelection('all')" class="nav-link active" data-toggle="pill" href="#all" role="tab">All</a>
+	 		 </li>
+			 <li class="nav-item">
+			     <a id="work-nav-link" onclick="filterSelection('project')" class="nav-link" data-toggle="pill" href="#projects" role="tab">Projects</a>
+			 </li>
+			 <li class="nav-item">
+			     <a id="work-nav-link" onclick="filterSelection('side-hustle')" class="nav-link" data-toggle="pill" href="#side-hustles" role="tab">Side-Hustles</a>
+			 </li>
+			 <li class="nav-item">
+			     <a id="work-nav-link" onclick="filterSelection('future')" class="nav-link" data-toggle="pill" href="#future" role="tab">Future Projects</a>
+			 </li>
+			 <li class="nav-item">
+			     <a id="work-nav-link" onclick="filterSelection('exp')" class="nav-link" data-toggle="pill" href="#exp" role="tab">Work</a>
+			 </li>
+		 </ul>
+	 <!-- Work Navigation -->
+
+	 <!-- Work Cards -->
+	 <div id="work-cards" style="width: 100%; padding-top: 70px; padding-left: 5%; padding-right: 5%;">
+
+		 <!-- Cards -->
+		 <div class="animated zoomIn responsive filter project">
+		   <div class="gallery">
+		 		<a id="2" href="https://github.com/vishal0027/Interpreter/" target="_blank">
+		 			<div class="card card-profile work-card-profile">
+		 				 <div class="card-cover" style="height: 200px; background-image: url('assets/images/rdp.png');">
+		 				 </div>
+		 				  <div class="card-body work-card-body" style="background-color: rgb(255,255,244);">
+		 						 <h4 class="card-title">Interpreter</h4>
+		 						 <h6 class="current">Current Project</h6>
+		 						 <p class="card-description">
+		 							 Interpreter is a interpreter for an expresion grammer. It analysis the input and determines wheather it follow the grammer rules, and if so it execute the expression and returns the output of the expression.
+		 						 </p>
+		 				 </div>
+		 			 </div>
+		 		 </a>
+		   </div>
+		 </div>
+			<!-- End of Cards -->
+
+			<!-- Cards -->
+			<div class="animated zoomIn responsive filter side-hustle">
+				<div class="gallery">
+				 <a href="https://github.com/vishal0027/SnakeGame" target="_blank">
+					 <div class="card card-profile work-card-profile">
+							<div class="card-cover" style="height: 200px; background-image: url('assets/images/snake.gif');">
+							</div>
+							 <div class="card-body work-card-body" style="background-color: rgb(255,255,244);">
+									<h4 class="card-title">Snake Game</h4>
+									<h6 class="current">Current Solo Project</h6>
+									<p class="card-description">
+										A simple attempt if recreating legendary Snake game. (Nokia 1100) version. I used P5 framework of javascript to create background canvas and other obects of game.
+									</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!-- End of Cards -->
+
+			<!-- Cards -->
+		<div class="animated zoomIn responsive filter project">
+	 		<div class="gallery">
+	 		 		<a href="https://github.com/vishal0027/AnalyzerForExpressionLanguage" target="_blank">
+	 		 			<div class="card card-profile work-card-profile">
+	 		 				 <div class="card-cover" style="height: 200px; background-image: url('assets/images/analyzer.png');">
+	 		 				 </div>
+	 		 				  <div class="card-body work-card-body" style="background-color: rgb(255,255,244);">
+	 		 						 <h4 class="card-title">Analyser for Expression Language</h4>
+	 		 						 <h6 class="Finshed">Finshed Project</h6>
+	 		 						 <p class="card-description">
+	 		 							 An analyzer for expression language for a regular expression language.The software is Designed by Contract for school.
+	 		 						 </p>
+	 		 				 </div>
+	 		 			 </div>
+	 		 		 </a>
+	 		 </div>
+ 		 </div>
+ 			<!-- End of Cards -->
+
+			<!-- Cards -->
+			<div class="animated zoomIn responsive filter project">
+ 		   <div class="gallery">
+ 		 		<a href="https://github.com/vishal0027/Sockets" target="_blank">
+ 		 			<div class="card card-profile work-card-profile">
+ 		 				 <div class="card-cover" style="height: 200px; background-image: url('assets/images/sockets.jpg');">
+ 		 				 </div>
+ 		 				 <div class="card-body work-card-body" style="background-color: rgb(255,255,244);">
+ 		 						 <h4 class="card-title">Sockets</h4>
+ 		 						 <h6 class="Finshed">Finished Project</h6>
+ 		 						 <p class="card-description">
+ 		 							 A simple chat application based on java Sockets. A chat can be instantiated by use of Ip adderess and port number.
+ 		 						 </p>
+ 		 				 </div>
+ 		 			 </div>
+ 		 		 </a>
+ 		   </div>
+ 		 </div>
+ 			<!-- End of Cards -->
+			<!-- Cards -->
+			<div class="animated zoomIn responsive filter side-hustle future">
+				<div class="gallery">
+					<a href="" target="_blank">
+						<div class="card card-profile work-card-profile">
+							 <div class="card-cover" style="height: 200px; background-image: url('assets/images/software.jpg');">
+							 </div>
+							  <div class="card-body work-card-body" style="background-color: rgb(255,255,244);">
+									 <h4 class="card-title">Software Design</h4>
+									 <h6 class="coming-soon">Coming Soon (In-progress)</h6>
+									 <p class="card-description">
+										 Some implementation of Software Design Principle for example Visitor Pattern, Observer Pattern, State Pattern, Event Driven Pattern
+									 </p>
+							 </div>
+						 </div>
+					 </a>
+				</div>
+			</div>
+			<!-- End of Cards -->
+
+			<!-- Cards -->
+		<div class="animated zoomIn responsive filter side-hustle future">
+	 		<div class="gallery">
+	 		 			<div class="card card-profile work-card-profile">
+	 		 				 <div class="card-cover" style="height: 200px; background-image: url('assets/images/yorku.jpeg');">
+	 		 				 </div>
+	 		 				 <div class="card-body work-card-body" style="background-color: rgb(255,255,244);">
+	 		 						 <h4 class="card-title">York U Simulator</h4>
+	 		 						 <h6 class="coming-soon">Coming Soon</h6>
+	 		 						 <p class="card-description">
+	 		 							 I'll be delvolping a small decison tree based game.
+	 		 							 Stay Tuned.
+	 		 						 </p>
+	 		 				 </div>
+	 		 			 </div>
+	 		</div>
+ 		</div>
+ 			<!-- End of Cards -->
+			<!-- Cards -->
+		<div class="animated zoomIn responsive filter  exp">
+	 		<div class="gallery">
+	 		 			<div class="card card-profile work-card-profile">
+	 		 				 <div class="card-cover" style="height: 200px; background-image: url('assets/images/icon.png');">
+	 		 				 </div>
+	 		 				 <div class="card-body work-card-body" style="background-color: rgb(255,255,244);">
+	 		 						 <h4 class="card-title">Teaching Assitant</h4>
+	 		 						 <h6 class="card-title">York University</h6>
+	 		 						 <h6 class="coming-soon">2017 - Current</h6>
+	 		 						 <p class="card-description">
+	 		 							■ Conduct labs tutorial for students and assist them to achieve objectives of labs.<br>
+										■ Assist Professor with grading and developing content for labs.
+	 		 						 </p>
+	 		 				 </div>
+	 		 			 </div>
+	 		</div>
+ 		</div>
+ 			<!-- End of Cards -->
+			<!-- Cards -->
+		<div class="animated zoomIn responsive filter  exp">
+	 		<div class="gallery">
+	 		 			<div class="card card-profile work-card-profile">
+	 		 				 <div class="card-cover" style="height: 200px; background-image: url('assets/images/source.png');">
+	 		 				 </div>
+	 		 				 <div class="card-body work-card-body" style="background-color: rgb(255,255,244);">
+	 		 						 <h4 class="card-title">Customer Service Representative</h4>
+	 		 						 <h6 class="card-title">The Source (Bell Canada)</h6>
+	 		 						 <h6 class="coming-soon">2015 - 2016</h6>
+	 		 						 <p class="card-description">
+	 		 							Delivered excellent technical support and outstanding customer service to Customers and in person, by phone, and by email.
+	 		 						 </p>
+	 		 				 </div>
+	 		 			 </div>
+	 		</div>
+ 		</div>
+ 			<!-- End of Cards -->
+			<!-- ClearFix -->
+			<div class="clearfix"></div>
+
+	 </div>
+	 <!-- End of Work Cards -->
+
+	</div>
+	<!-- Work Ends -->
+
+	<!-- Skill -->
+	<div id="skills">
+			<div class="label label-info text-center content-title">skills</div>
+			<div class="skill-logo ">
+				<img src="assets/logos/scala-logo.png" alt="scala logo" class="logo"/>
+       			<img src="assets/logos/mongodb-logo.png" alt="mongo db" class="logo"/>
+        		<img src="assets/logos/gradle-logo.png" alt="Gradle" class="logo"/>
+				<img src="assets/logos/tdd-logo.png" alt="tdd" class="logo"/>
+				<img src="assets/logos/bash-logo.png" alt="bash" class="logo"/>
+				<img src="assets/logos/git-logo.png" alt="git" class="logo"/>
+				<img src="assets/logos/ccna-logo.png" alt="CCNA" class="logo"/>
+				<img src="assets/logos/docker-logo.png" alt="docker logo" class="logo"/>
+				<img src="assets/logos/android-logo.png" alt="android logo" class="logo"/>
+				<img src="assets/logos/centod-logo.png" alt="centos logo" class="logo"/>
+				<img src="assets/logos/mips-logo" alt="mips logo" class="logo"/>
+				<img src="assets/logos/html-logo.png" alt="html 5" class="logo"/>
+				<img src="assets/logos/sql-logo.png" alt="sql logo" class="logo"/>
+				<img src="assets/logos/nodejs-logo.png" alt="node js" class="logo"/>
+				<img src="assets/logos/c-logo.png" alt="C" class="logo"/>
+				<img src="assets/logos/java-logo.png" alt="java" class="logo"/>
+				<img src="assets/logos/wordpress-icon.svg" alt="Wordpress" class="logo"/>
+				<img src="assets/logos/bootstrap-logo.png" alt="bootstrap" class="logo"/>
+				<img src="assets/logos/python-logo.png" alt="Python" class="logo"/>
+				<img src="assets/logos/atom-logo.png" alt="Atom" class="logo"/>
+
+			</div>
+	</div>
+	<!-- Skill -->
+
+	<!-- About -->
+	<div id="about">
+		<div class="label label-info text-center content-title">About</div>
+		<div class="card card-profile about-card-profile" style="background: white; width: 80%; margin-top: 90px; margin-left: auto; margin-right: auto;">
+		   <div class="card-avatar">
+		       <a href="https://www.linkedin.com/in/vishal0027" target="_blank">
+		           <img src="assets/images/vishal.jpg" alt="..." style="border-radius: 25px">
+		       </a>
+		   </div>
+		   <div class="card-body">
+		       <h4 class="card-title" style="font-size: 25px;">Vishal Malik</h4>
+		       <h6 class="card-category">Software Developer / Web Developer</h6>
+		       <p class="card-description" style="text-align: justify; font-size: 20px;">
+		       	"I love product design, blockchain, and social innovation aspiring to become a software developer - someone who lies at the cross-section of data, design, and development. I'm a lifelong learner, passionate about exponential-thinking, design-thinking, and systems-thinking. I am what you may call an "innovation-thinker". I'm also a writer, pianist - artist and performer overall; a comforter, philosopher, and lifelong mate. At the end of the day I'm young, scrappy, and hungry makin' it in the big city of the 6ix."
+		       </p>
+		   </div>
+		</div>
+	</div>
+	<!-- About Ends -->
+
+	<!-- Contact -->
+	<div id="contact" class="contact" style="width: 100%; margin-bottom: 30px; position: relative; font-size: 20px;">
+		<div class="label label-info text-center center-div content-title">contact</div>
+		<div class="row" style="padding-top: 80px;">
+	      <div class="col-md-6 ml-auto mr-auto text-center">
+	      		<a href="https://twitter.com/i_vishalmalik" target="_blank">
+	          		<button class="btn btn-just-icon btn-twitter">
+	            		 <i class="fa fa-twitter"></i>
+	          		</button>
+	          	</a>
+	          	<a href="https://www.facebook.com/vishal.malik.1232" target="_blank">
+			         <button class="btn btn-just-icon btn-facebook">
+			             <i class="fa fa-facebook"></i>
+			         </button>
+			    </a>
+			    <a href="https://github.com/vishal0027" target="_blank">
+			         <button class="btn btn-just-icon btn-github">
+			             <i class="fa fa-github"></i>
+			         </button>
+			    </a>
+	          	<a href="https://www.instagram.com/vishal_malik0027/?hl=en" target="_blank">
+			         <button class="btn btn-just-icon btn-instagram">
+			             <i class="fa fa-instagram"></i>
+			         </button>
+			    </a>
+			    <a href="https://www.linkedin.com/in/vishal0027" target="_blank">
+			         <button class="btn btn-just-icon btn-linkedin">
+			             <i class="fa fa-linkedin"></i>
+			         </button>
+			    </a>
+      </div>
+	  </div>
+		<div class="row">
+			<form action="http://malikvishal.us17.list-manage.com/subscribe/post?u=f4174e073075340af6c3052d7&amp;id=c204dad817" method="post" id="mc-embedded-subscribe-form" method="post" style="width: 100%;" target="_blank" name="mc-embedded-subscribe-form" class="validate">
+                    <div class="col-md-6 ml-auto mr-auto text-center">
+                        <h3 class="title"><small>Or subscribe to newsletters</small></h3>
+                        <form class="contact">
+														<br>
+                            <div class="row">
+                                <div class="col-md-6 ml-auto mr-auto">
+                                    <button type="submit" class="btn btn-primary btn-block btn-round">subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+        </div>
+			</form>
+	</div>
+	<!-- Contact Ends -->
+
+	<script>
+    	// SVG animate
+		var path = document.getElementsByClassName("anime");
+		var length;
+		for (var i = 0; i < path.length; i++) {
+			length = path[i].getTotalLength();
+			// Clear any previous transition
+			path[i].style.transition = path[i].style.WebkitTransition = 'none';
+			// Set up the starting positions
+			path[i].style.strokeDasharray = length + ' ' + length;
+			path[i].style.strokeDashoffset = length;
+			// Trigger a layout so styles are calculated & the browser
+			// picks up the starting position before animating
+			path[i].getBoundingClientRect();
+			// Define our transition
+			path[i].style.transition = path[i].style.WebkitTransition = 'stroke-dashoffset 3s ease-in-out';
+			// Go!
+			path[i].style.strokeDashoffset = '0';
+		}
+		// End SVG animate
+		// Filtering Cards
+		filterSelection("all");
+		function filterSelection(c) {
+		  var x, i;
+		  x = document.getElementsByClassName("filter");
+		  for (i = 0; i < x.length; i++) {
+		    removeClass(x[i], "show");
+				void x[i].offsetWidth;
+		    if (x[i].className.indexOf(c) > -1 || c === 'all') addClass(x[i], "show");
+		  }
+		}
+		function addClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+		    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		  }
+		}
+		function removeClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+		    while (arr1.indexOf(arr2[i]) > -1) {
+		      arr1.splice(arr1.indexOf(arr2[i]), 1);
+		    }
+		  }
+		  element.className = arr1.join(" ");
+		}
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("work-nav");
+		var btns = btnContainer.getElementsByClassName("nav-link");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function(){
+		    var current = document.getElementsByClassName("active");
+		    current[0].className = current[0].className.replace(" active", "");
+		    this.className += " active";
+		  });
+		}
+		// End Filtering Cards
+	</script>
+	<script src="particle.js"></script>
+	<script src="sketch.js"></script>
+	<!-- p5 -->
+	<script src="libraries/p5/p5.js"></script>
+	<script src="libraries/p5/p5.dom.js"></script>
+	<!-- jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- to make header disapper after scroll-->
+	<script src="libraries/scripts/headerEffect.js"></script>
+	<script src="libraries/scripts/master.js"></script>
+</body>
+</html>
